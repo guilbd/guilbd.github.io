@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Análise de Balanço Financeiro e DRE</title>
+        <link rel="stylesheet" href="styles_enhanced.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+    </head>
+<body>
+    <div class="container">
+        <h1>Análise de Balanço Financeiro e DRE</h1>
+
+        <h2>Balanço Financeiro</h2>
+        <label for="ativosCirculantes">Ativos Circulantes:</label>
+        <input type="number" id="ativosCirculantes"><br>
+
+        <label for="ativosNaoCirculantes">Ativos Não Circulantes:</label>
+        <input type="number" id="ativosNaoCirculantes"><br>
+
+        <label for="passivosCirculantes">Passivos Circulantes:</label>
+        <input type="number" id="passivosCirculantes"><br>
+
+        <label for="passivosNaoCirculantes">Passivos Não Circulantes:</label>
+        <input type="number" id="passivosNaoCirculantes"><br>
+
+        <label for="patrimonioLiquido">Patrimônio Líquido:</label>
+        <input type="number" id="patrimonioLiquido"><br>
+
+        <h2>Demonstração do Resultado do Exercício (DRE)</h2>
+        <label for="receitaBruta">Receita Bruta de Vendas:</label>
+        <input type="number" id="receitaBruta"><br>
+
+        <label for="cpv">Custo dos Produtos Vendidos (CPV):</label>
+        <input type="number" id="cpv"><br>
+
+        <label for="despesasOperacionais">Despesas Operacionais:</label>
+        <input type="number" id="despesasOperacionais"><br>
+
+        <label for="outrasReceitas">Outras Receitas:</label>
+        <input type="number" id="outrasReceitas"><br>
+
+        <label for="outrasDespesas">Outras Despesas:</label>
+        <input type="number" id="outrasDespesas"><br>
+
+        <button id="analyzeButton">Analisar</button>
+        <button id="exportButton">Exportar para PDF</button>
+
+        <div class="analysis-section">
+            <h2>Análise</h2>
+            <p id="analysis"></p>
+        </div>
+    </div>
+
+    <script src="finance_analysis_js_enhanced.js"></script>
+</body>
+</html>
